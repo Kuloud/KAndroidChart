@@ -41,9 +41,6 @@ import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
-import com.xxmassdeveloper.mpchartexample.realm.RealmDatabaseActivityBar;
-import com.xxmassdeveloper.mpchartexample.realm.RealmDatabaseActivityLine;
-import com.xxmassdeveloper.mpchartexample.realm.RealmMainActivity;
 
 import java.util.ArrayList;
 
@@ -123,12 +120,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
         objects.add(new ContentItem(
                 "Chart in ScrollView",
                 "This demonstrates how to use a chart inside a ScrollView."));
-
-        ContentItem realm = new ContentItem(
-                "Realm.io Database",
-                "This demonstrates how to use this library with Realm.io mobile database.");
-        realm.isNew = true;
-        objects.add(realm);
 
         MyAdapter adapter = new MyAdapter(this, objects);
 
@@ -246,10 +237,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
                 break;
             case 25:
                 i = new Intent(this, ScrollViewActivity.class);
-                startActivity(i);
-                break;
-            case 26:
-                i = new Intent(this, RealmMainActivity.class);
                 startActivity(i);
                 break;
         }
