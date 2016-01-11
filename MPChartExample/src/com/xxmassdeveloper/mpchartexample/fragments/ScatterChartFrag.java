@@ -6,11 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.github.mikephil.charting.charts.ScatterChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
+import com.kuloud.android.chart.charts.ScatterChart;
+import com.kuloud.android.chart.components.Legend;
+import com.kuloud.android.chart.components.XAxis;
+import com.kuloud.android.chart.components.YAxis;
+import com.kuloud.android.chart.components.XAxis.XAxisPosition;
 import com.xxmassdeveloper.mpchartexample.R;
 import com.xxmassdeveloper.mpchartexample.custom.MyMarkerView;
 

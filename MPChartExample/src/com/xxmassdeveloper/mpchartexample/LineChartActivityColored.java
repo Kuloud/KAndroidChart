@@ -6,12 +6,12 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.kuloud.android.chart.charts.LineChart;
+import com.kuloud.android.chart.components.Legend;
+import com.kuloud.android.chart.data.Entry;
+import com.kuloud.android.chart.data.LineData;
+import com.kuloud.android.chart.data.LineDataSet;
+import com.kuloud.android.chart.interfaces.datasets.ILineDataSet;
 import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

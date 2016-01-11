@@ -9,12 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.listener.ChartTouchListener;
-import com.github.mikephil.charting.listener.OnChartGestureListener;
+import com.kuloud.android.chart.charts.BarChart;
+import com.kuloud.android.chart.components.Legend;
+import com.kuloud.android.chart.components.XAxis;
+import com.kuloud.android.chart.components.YAxis;
+import com.kuloud.android.chart.listener.ChartTouchListener;
+import com.kuloud.android.chart.listener.OnChartGestureListener;
 import com.xxmassdeveloper.mpchartexample.R;
 import com.xxmassdeveloper.mpchartexample.custom.MyMarkerView;
 

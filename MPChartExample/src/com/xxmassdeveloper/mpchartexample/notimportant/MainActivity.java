@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.github.mikephil.charting.utils.Utils;
+import com.kuloud.android.chart.utils.Utils;
 import com.xxmassdeveloper.mpchartexample.AnotherBarActivity;
 import com.xxmassdeveloper.mpchartexample.BarChartActivity;
 import com.xxmassdeveloper.mpchartexample.BarChartActivityMultiDataset;
@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        setTitle("MPAndroidChart Example");
+        setTitle("KAndroidChart Example");
 
         // initialize the utilities
         Utils.init(this);

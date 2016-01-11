@@ -6,12 +6,12 @@ import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.ChartData;
-import com.github.mikephil.charting.data.LineData;
+import com.kuloud.android.chart.charts.LineChart;
+import com.kuloud.android.chart.components.XAxis;
+import com.kuloud.android.chart.components.XAxis.XAxisPosition;
+import com.kuloud.android.chart.components.YAxis;
+import com.kuloud.android.chart.data.ChartData;
+import com.kuloud.android.chart.data.LineData;
 import com.xxmassdeveloper.mpchartexample.R;
 
 public class LineChartItem extends ChartItem {

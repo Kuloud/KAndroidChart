@@ -12,15 +12,15 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.github.mikephil.charting.charts.CandleStickChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.XAxis.XAxisPosition;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.components.YAxis.AxisDependency;
-import com.github.mikephil.charting.data.CandleData;
-import com.github.mikephil.charting.data.CandleDataSet;
-import com.github.mikephil.charting.data.CandleEntry;
-import com.github.mikephil.charting.interfaces.datasets.ICandleDataSet;
+import com.kuloud.android.chart.charts.CandleStickChart;
+import com.kuloud.android.chart.components.XAxis;
+import com.kuloud.android.chart.components.XAxis.XAxisPosition;
+import com.kuloud.android.chart.components.YAxis;
+import com.kuloud.android.chart.components.YAxis.AxisDependency;
+import com.kuloud.android.chart.data.CandleData;
+import com.kuloud.android.chart.data.CandleDataSet;
+import com.kuloud.android.chart.data.CandleEntry;
+import com.kuloud.android.chart.interfaces.datasets.ICandleDataSet;
 import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
 
 import java.util.ArrayList;

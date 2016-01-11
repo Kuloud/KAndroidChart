@@ -1,7 +1,7 @@
 package com.xxmassdeveloper.mpchartexample.custom;
 
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.formatter.YAxisValueFormatter;
+import com.kuloud.android.chart.components.YAxis;
+import com.kuloud.android.chart.formatter.YAxisValueFormatter;
 
 import java.text.DecimalFormat;
 

@@ -1,5 +1,3 @@
-include 'MPChartLib'
-//include 'MPAndroidChart-Realm'
-include 'MPChartExample'
+include ':kchartdemo', ':kchartlib'
 
 

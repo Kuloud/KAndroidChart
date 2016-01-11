@@ -1,0 +1,11 @@
+package com.kuloud.android.chart.interfaces.datasets;
+
+import com.kuloud.android.chart.data.Entry;
+
+/**
+ * Created by Philipp Jahoda on 03/11/15.
+ */
+public interface IRadarDataSet extends ILineRadarDataSet<Entry> {
+
+
+}

@@ -10,13 +10,13 @@ import android.text.style.RelativeSizeSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.Legend.LegendPosition;
-import com.github.mikephil.charting.data.ChartData;
-import com.github.mikephil.charting.data.PieData;
-import com.github.mikephil.charting.formatter.PercentFormatter;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.kuloud.android.chart.charts.PieChart;
+import com.kuloud.android.chart.components.Legend;
+import com.kuloud.android.chart.components.Legend.LegendPosition;
+import com.kuloud.android.chart.data.ChartData;
+import com.kuloud.android.chart.data.PieData;
+import com.kuloud.android.chart.formatter.PercentFormatter;
+import com.kuloud.android.chart.utils.ColorTemplate;
 import com.xxmassdeveloper.mpchartexample.R;
 
 public class PieChartItem extends ChartItem {
