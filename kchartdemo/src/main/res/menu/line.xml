@@ -10,6 +10,10 @@
         android:title="Toggle Filled">
     </item>
     <item
+        android:id="@+id/actionToggleFilled1"
+        android:title="Toggle Filled">
+    </item>
+    <item
         android:id="@+id/actionToggleCircles"
         android:title="Toggle Circles">
     </item>

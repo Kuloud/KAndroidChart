@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
@@ -28,7 +27,6 @@ import com.kuloud.android.chart.data.LineDataSet;
 import com.kuloud.android.chart.data.filter.Approximator;
 import com.kuloud.android.chart.data.filter.Approximator.ApproximatorType;
 import com.kuloud.android.chart.demo.BaseActivity;
-import com.kuloud.android.chart.demo.FeatureContent;
 import com.kuloud.android.chart.demo.MyMarkerView;
 import com.kuloud.android.chart.demo.R;
 import com.kuloud.android.chart.highlight.Highlight;
@@ -360,9 +358,9 @@ public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeL
         set1.setValueTextSize(9f);
         set1.setFillAlpha(65);
         set1.setFillColor(Color.BLACK);
-//        set1.setDrawFilled(true);
-        // set1.setShader(new LinearGradient(0, 0, 0, mChart.getHeight(),
-        // Color.BLACK, Color.WHITE, Shader.TileMode.MIRROR));
+        set1.setDrawFilled(true);
+//        set1.setShader(new LinearGradient(0, 0, 0, mChart.getHeight(),
+//         Color.BLACK, Color.WHITE, Shader.TileMode.MIRROR));
 
         ArrayList<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
         dataSets.add(set1); // add the datasets
