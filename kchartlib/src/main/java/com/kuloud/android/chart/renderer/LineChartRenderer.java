@@ -376,7 +376,7 @@ public class LineChartRenderer extends LineScatterCandleRadarRenderer {
      * @param dataSet
      * @return
      */
-    private Path generateFilledPath(ILineDataSet dataSet, int from, int to) {
+    protected Path generateFilledPath(ILineDataSet dataSet, int from, int to) {
 
         float fillMin = dataSet.getFillFormatter().getFillLinePosition(dataSet, mChart);
         float phaseX = mAnimator.getPhaseX();

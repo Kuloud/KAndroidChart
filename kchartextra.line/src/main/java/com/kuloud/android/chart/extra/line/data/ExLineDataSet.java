@@ -21,7 +21,7 @@ public class ExLineDataSet extends LineDataSet implements IExLineDataSet {
 
     @Override
     public Shader getFillShader() {
-        return null;
+        return mFillShader;
     }
 
     /**

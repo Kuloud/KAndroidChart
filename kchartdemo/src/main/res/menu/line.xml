@@ -11,7 +11,7 @@
     </item>
     <item
         android:id="@+id/actionToggleFilled1"
-        android:title="Toggle Filled">
+        android:title="Toggle Filled Shader">
     </item>
     <item
         android:id="@+id/actionToggleCircles"

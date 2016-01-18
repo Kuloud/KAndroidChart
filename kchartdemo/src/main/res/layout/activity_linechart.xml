@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.kuloud.android.chart.charts.LineChart
+    <com.kuloud.android.chart.extra.line.charts.ExLineChart
         android:id="@+id/chart1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

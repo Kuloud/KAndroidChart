@@ -2,6 +2,8 @@
 package com.kuloud.android.chart.demo.linechart;
 
 import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,6 +31,8 @@ import com.kuloud.android.chart.data.filter.Approximator.ApproximatorType;
 import com.kuloud.android.chart.demo.BaseActivity;
 import com.kuloud.android.chart.demo.MyMarkerView;
 import com.kuloud.android.chart.demo.R;
+import com.kuloud.android.chart.extra.line.charts.ExLineChart;
+import com.kuloud.android.chart.extra.line.data.ExLineDataSet;
 import com.kuloud.android.chart.highlight.Highlight;
 import com.kuloud.android.chart.interfaces.datasets.ILineDataSet;
 import com.kuloud.android.chart.listener.ChartTouchListener;
@@ -41,7 +45,7 @@ import java.util.List;
 public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeListener,
         OnChartGestureListener, OnChartValueSelectedListener {
 
-    private LineChart mChart;
+    private ExLineChart mChart;
     private SeekBar mSeekBarX, mSeekBarY;
     private TextView tvX, tvY;
 
@@ -62,7 +66,7 @@ public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeL
         mSeekBarY.setOnSeekBarChangeListener(this);
         mSeekBarX.setOnSeekBarChangeListener(this);
 
-        mChart = (LineChart) findViewById(R.id.chart1);
+        mChart = (ExLineChart) findViewById(R.id.chart1);
         mChart.setOnChartGestureListener(this);
         mChart.setOnChartValueSelectedListener(this);
         mChart.setDrawGridBackground(false);
@@ -195,6 +199,22 @@ public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeL
                 break;
             }
             case R.id.actionToggleFilled: {
+
+                List<ILineDataSet> sets = mChart.getData()
+                        .getDataSets();
+
+                for (ILineDataSet iSet : sets) {
+
+                    LineDataSet set = (LineDataSet) iSet;
+                    if (set.isDrawFilledEnabled())
+                        set.setDrawFilled(false);
+                    else
+                        set.setDrawFilled(true);
+                }
+                mChart.invalidate();
+                break;
+            }
+            case R.id.actionToggleFilled1: {
 
                 List<ILineDataSet> sets = mChart.getData()
                         .getDataSets();
@@ -343,7 +363,7 @@ public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeL
         }
 
         // create a dataset and give it a type
-        LineDataSet set1 = new LineDataSet(yVals, "DataSet 1");
+        ExLineDataSet set1 = new ExLineDataSet(yVals, "DataSet 1");
         // set1.setFillAlpha(110);
         // set1.setFillColor(Color.RED);
 
@@ -359,8 +379,7 @@ public class LineChartActivity1 extends BaseActivity implements OnSeekBarChangeL
         set1.setFillAlpha(65);
         set1.setFillColor(Color.BLACK);
         set1.setDrawFilled(true);
-//        set1.setShader(new LinearGradient(0, 0, 0, mChart.getHeight(),
-//         Color.BLACK, Color.WHITE, Shader.TileMode.MIRROR));
+        set1.setFillShader(new LinearGradient(0, 0, 0, mChart.getHeight(), Color.BLACK, Color.WHITE, Shader.TileMode.MIRROR));
 
         ArrayList<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
         dataSets.add(set1); // add the datasets
